@@ -218,16 +218,20 @@ hr {
   margin-right: 1%;
 }
 
-.contact {
-  margin-top: 5%;
+address {
+  margin: 3% 0;
 }
 
 footer {
-  /* border: 2px solid black; */
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin: 5% 0;
 }
 
+@media(max-width: 800px) {
+    
+}
 
+@media(max-width: 500px) {
+    
+}
 

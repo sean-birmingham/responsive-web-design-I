@@ -153,7 +153,7 @@ h5 {
 
 
 .nav-container {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   display: flex;
   justify-content: center; 
 }
@@ -186,7 +186,7 @@ h5 {
 }
 
 .header-container {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   margin: 10% 0;
   display: flex;
   justify-content: center;
@@ -198,33 +198,35 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 35%;
 }
 
-h1 {
+.header-item h1 {
   display: flex;
   text-align: center;
   font-size: 80px;
 }
 
-button {
+.header-item button {
   border: 1px solid black;
   width: 30%;
-  padding: 2%;
+  padding: 1%;
   background: white;
   font-size: 16px;
 }
 
 .top-row {
-  border: 5px solid red;
+  /* border: 5px solid red; */
+  border-top: 2px solid black;
   margin: 5% 0;
   display: flex;
   width: 100%;
 }
 
 .top-row .top-row-item {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   width: 50%;
+  margin-top: 30px;
 }
 
 .middle-img {
@@ -243,7 +245,7 @@ button {
 }
 
 address {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   margin: 10px 0px 0px 0px;
 }
 
@@ -284,7 +286,7 @@ footer {
   }
 
   .header-container button {
-    width: 60%;
+    width: 80%;
   }
 
   .middle-img {
@@ -309,21 +311,26 @@ footer {
     text-align: center;
   }
 
+  .header-container button {
+    width: 100%;
+  }
+
   .top-row {
     flex-direction: column;
   }
 
   .top-row .top-row-item {
     width: 100%;
+    margin: 20px 0;
   }
 
   .bottom-row {
-    border: 5px solid red;
     flex-direction: column;
   }
 
   .bottom-row  .bottom-row-item {
     width: 100%;
+    margin: 20px 0;
   }
 }
 

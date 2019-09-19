@@ -135,8 +135,10 @@ table {
 
 html,
 body {
+  width: 95%;
   height: 100%;
   font-family: "Titillium Web", sans-serif;
+  margin: 0 auto;
 }
 
 h1,
@@ -149,30 +151,49 @@ h5 {
   margin-bottom: 15px;
 }
 
-.container {
-  width: 880px;
-  margin: 0 auto;
-}
 
-.navigation {
-  margin-top: 2%;
+.nav-container {
+  border: 5px solid red;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center; 
 }
 
-.navigation a {
+.nav-container .nav {
+  /* border: 5px solid blue; */
+  display: flex;
+  margin-top: 2%;
+}
+
+.nav-container .nav a {
+  /* border: 5px solid green; */
+  font-weight: bold;
   text-decoration: none;
   color: lightgray;
+  margin-right: 60px;
+}
+
+.nav-container .logo {
+  /* border: 5px solid purple; */
+  height: 35px;
+  display: flex;
+  align-self: flex-end;
+}
+
+.nav-logo {
+  height: 30px;
+  display: flex;
+  align-self: flex-end;
 }
 
 .header-container {
+  border: 5px solid red;
   margin: 10% 0;
   display: flex;
   justify-content: center;
 }
 
 .header-item {
+  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,43 +204,51 @@ h5 {
 h1 {
   display: flex;
   text-align: center;
-  align-self: center;
   font-size: 80px;
 }
 
 button {
   border: 1px solid black;
-  width: 40%;
+  width: 30%;
+  padding: 2%;
   background: white;
-  font-family: "Titillium Web", sans-serif;
   font-size: 16px;
 }
 
-hr {
-  border-color: black;
-}
-
 .top-row {
+  border: 5px solid red;
   margin: 5% 0;
   display: flex;
+  width: 100%;
 }
 
 .top-row .top-row-item {
+  border: 5px solid blue;
   width: 50%;
 }
 
+.middle-img {
+  width: 100%
+}
 .bottom-row {
-  margin: 5% 0;
+  /* border: 5px solid red; */
+  margin: 2% 0;
   display: flex;
 }
 
 .bottom-row .bottom-row-item {
+  /* border: 5px solid blue; */
   width: 50%;
   margin-right: 1%;
 }
 
 address {
-  margin: 3% 0;
+  border-top: 1px solid black;
+  margin: 10px 0px 0px 0px;
+}
+
+address h2 {
+  margin-top: 25px;
 }
 
 footer {
@@ -228,10 +257,73 @@ footer {
 }
 
 @media(max-width: 800px) {
-    
+  .container {
+    width: 100%;
+  }
+  
+  .nav-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-container .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-container img {
+    display: none;
+  }
+
+  .header-container button {
+    width: 60%;
+  }
+
+  .middle-img {
+    width: 100%;
+  }
+
 }
 
 @media(max-width: 500px) {
-    
+  .container {
+    width: 100%;
+  }
+
+  .nav-container .nav {
+    flex-direction: column;
+  }
+
+  .nav a {
+    width: 100%;
+    border-top: 1px solid grey;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .top-row {
+    flex-direction: column;
+  }
+
+  .top-row .top-row-item {
+    width: 100%;
+  }
+
+  .bottom-row {
+    border: 5px solid red;
+    flex-direction: column;
+  }
+
+  .bottom-row  .bottom-row-item {
+    width: 100%;
+  }
 }
 
